@@ -1,0 +1,26 @@
+#+TITLE: Writeup
+#+AUTHOR: Quang Luong
+
+* How to run
+** Open the Jupyter Notebook file (with required file in the same directory)
+** Edit the CURRENTPHASE variable ('training', 'development', or 'test')
+** Run the java program accordingly
+* Feature engineering
+You can refer to the notebook file which does display the feature table
+** stem of the last token
+** previous stem + current POS
+** previous POS
+** next POS
+** previous POS + current POS
+** current POS + next POS
+** previous POS + current POS + next POS
+** previous BIO
+* Result on development set
+31733 out of 32853 tags correct
+  accuracy: 96.59
+8378 groups in key
+8588 groups in response
+7721 correct groups
+  precision: 89.90
+  recall:    92.16
+  F1:        91.02
